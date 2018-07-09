@@ -38,3 +38,9 @@ document.querySelectorAll('#favorites > .box').forEach(function(e) {
         goToScreen(screens.tripOptions);
     });
 });
+
+document.querySelectorAll('#trip-options > .box').forEach(function(e) {
+    e.addEventListener('click', function(e) {
+        goToScreen(screens.selectedTrip);
+    });
+});

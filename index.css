@@ -91,6 +91,11 @@ body::before {
 .box {
     height: 8.77061469265%;
     width: 90.1333333333%;
+    position: static;
+}
+
+.box:not(:first-child) {
+    margin-top: 2.5932533733%;
 }
 
 /* Main Screen Elements */
@@ -118,10 +123,11 @@ body::before {
     left: 4.93333333333%;
 }
 
-#favorites .box {
-    position: static;
-}
-
-#favorites .box:not(:first-child) {
-    margin-top: 2.5932533733%;
+/* Tip Options Screen Elements */
+#trip-options {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    top: 33.8830584708%;
+    left: 4.93333333333%;
 }
