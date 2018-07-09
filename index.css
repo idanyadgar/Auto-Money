@@ -3,3 +3,39 @@
 body {
     background-color: #ebebeb;
 }
+
+body::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#phone-container {
+    background-image: url('images/iphone.png');
+    background-size: contain;
+    max-width: 1438px;
+    max-height: 1047px;
+    width: 95.2317880795vh;
+    height: 90vh;
+    margin: 0 auto;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#phone-container::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#phone-screen {
+    text-align: left;
+    width: 40.1%;
+    height: 75.4%;
+    background-color: blue;
+    display: inline-block;
+    margin: -0.1% 0 0 -0.6%;
+    vertical-align: middle;
+}
