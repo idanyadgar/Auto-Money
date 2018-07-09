@@ -34,8 +34,8 @@ body::before {
     text-align: left;
     width: 40.1%;
     height: 75.4%;
-    background-color: blue;
     display: inline-block;
     margin: -0.1% 0 0 -0.6%;
     vertical-align: middle;
+    cursor: url('images/circle-shape-outline.png'), auto;
 }
