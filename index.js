@@ -44,3 +44,15 @@ document.querySelectorAll('#trip-options > .box').forEach(function(e) {
         goToScreen(screens.selectedTrip);
     });
 });
+
+document.querySelectorAll('#different-trip').forEach(function(e) {
+    e.addEventListener('click', function(e) {
+        goToScreen(screens.tripOptions);
+    });
+});
+
+document.querySelectorAll('#start').forEach(function(e) {
+    e.addEventListener('click', function(e) {
+        goToScreen(screens.liveTracking);
+    });
+});

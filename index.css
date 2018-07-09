@@ -131,3 +131,18 @@ body::before {
     top: 33.8830584708%;
     left: 4.93333333333%;
 }
+
+/* Selected Trip Screen Elements */
+#start {
+    height: 5.32233883058%;
+    width: 31.6%;
+    bottom: 9.29535232384%;
+    right: 7.06666666667%;
+}
+
+#different-trip {
+    height: 5.32233883058%;
+    width: 31.6%;
+    bottom: 2.99850074963%;
+    right: 7.06666666667%;
+}
