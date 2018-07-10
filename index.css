@@ -13,10 +13,10 @@ body::before {
 }
 
 #phone-container {
-    background-image: url('images/iphone.png');
+    background: url('images/iphone.png') no-repeat;
     background-size: contain;
     max-width: 1438px;
-    max-height: 1047px;
+    max-height: 1359px;
     width: 95.2317880795vh;
     height: 90vh;
     margin: 0 auto;
@@ -45,6 +45,7 @@ body::before {
     width: 100%;
     height: 100%;
     background-size: contain;
+    background-repeat: no-repeat;
     display: none;
     border: #777 solid 1px;
     position: relative;
