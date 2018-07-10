@@ -55,9 +55,9 @@ document.querySelectorAll('#start').forEach(function(e) {
     e.addEventListener('click', function(e) {
         goToScreen(screens.liveTracking);
 
-        // setTimeout(function() {
-        //     goToScreen(screens.thankYou);
-        // }, 7000);
+        setTimeout(function() {
+            goToScreen(screens.thankYou);
+        }, 7000);
     });
 });
 
