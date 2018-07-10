@@ -48,6 +48,7 @@ body::before {
     display: none;
     border: #777 solid 1px;
     position: relative;
+    overflow: hidden;
 }
 
 .screen * {
@@ -145,4 +146,36 @@ body::before {
     width: 31.6%;
     bottom: 2.99850074963%;
     right: 7.06666666667%;
+}
+
+/* Live Tracking Screen Elements */
+#directions {
+    opacity: 1;
+    width: 89.8666666667%;
+    height: 35.832083958%;
+    left: 5.06666666665%;
+    bottom: -22.1139430285%;
+    background: url('images/live-tracking-screen-directions.png') no-repeat;
+    background-size: contain;
+    transition: 1s ease all;
+}
+
+#directions.active {
+    bottom: 0;
+}
+
+#toggle-active {
+    opacity: 1;
+    border-radius: 99999px;
+    top: 6.368201%;
+    right: 4.509199%;
+    width: 5.418398%;
+    height: 10.460251046%;
+    background: url('images/toggle-active.png') no-repeat center center;
+    background-size: contain;
+    transition: 1s ease transform;
+}
+
+#directions.active #toggle-active {
+    transform: rotate(180deg);
 }

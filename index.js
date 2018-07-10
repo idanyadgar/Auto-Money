@@ -54,5 +54,13 @@ document.querySelectorAll('#different-trip').forEach(function(e) {
 document.querySelectorAll('#start').forEach(function(e) {
     e.addEventListener('click', function(e) {
         goToScreen(screens.liveTracking);
+
+        // setTimeout(function() {
+        //     goToScreen(screens.thankYou);
+        // }, 7000);
     });
+});
+
+document.querySelector('#toggle-active').addEventListener('click', function(e) {
+    document.getElementById('directions').classList.toggle('active');
 });
