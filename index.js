@@ -33,6 +33,10 @@ document.querySelectorAll('.microphone').forEach(function(e) {
     });
 });
 
+document.querySelector('#results').addEventListener('click', function(e) {
+    goToScreen(screens.tripOptions);
+});
+
 document.querySelectorAll('#favorites > .box').forEach(function(e) {
     e.addEventListener('click', function(e) {
         goToScreen(screens.tripOptions);

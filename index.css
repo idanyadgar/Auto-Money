@@ -116,6 +116,13 @@ body::before {
     border-radius: 99999px;
 }
 
+#results {
+    top: 47.0014992504%;
+    left: 20.1333333333%;
+    width: 59.4666666667%;
+    height: 15.1424287856%;
+}
+
 #favorites {
     background-color: transparent;
     width: 100%;
