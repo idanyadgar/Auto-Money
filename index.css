@@ -195,6 +195,7 @@ body::before {
     left: 4.93333333333%;
     width: 90.1333333333%;
     height: 8.39580209895%;
+    text-align: center;
 }
 
 .rating {
@@ -232,7 +233,7 @@ body::before {
 }
 
 .rating + .rating {
-    margin-left: 2.5942763%;
+    margin-left: 1.5%;
 }
 
 #plan-another-trip {
