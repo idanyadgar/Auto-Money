@@ -186,3 +186,57 @@ body::before {
 #directions.active #toggle-active {
     transform: rotate(180deg);
 }
+
+/* Thank You Screen Elements */
+#rate {
+    opacity: 1;
+    bottom: 16.4167916042%;
+    left: 4.93333333333%;
+    width: 90.1333333333%;
+    height: 8.39580209895%;
+}
+
+.rating {
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 16.5680473373%;
+    background-size: contain;
+    display: inline-block;
+    position: relative;
+    opacity: 0.4;
+}
+
+#very-bad.rating {
+    background-image: url('images/ratings/very-bad.png');
+}
+
+#bad.rating {
+    background-image: url('images/ratings/bad.png');
+}
+
+#medium.rating {
+    background-image: url('images/ratings/medium.png');
+}
+
+#good.rating {
+    background-image: url('images/ratings/good.png');
+}
+
+#very-good.rating {
+    background-image: url('images/ratings/very-good.png');
+}
+
+.rating.selected {
+    opacity: 1;
+}
+
+.rating + .rating {
+    margin-left: 2.5942763%;
+}
+
+#plan-another-trip {
+    bottom: 4.64767616192%;
+    left: 4.93333333333%;
+    width: 90.1333333333%;
+    height: 6.89655172414%;
+}

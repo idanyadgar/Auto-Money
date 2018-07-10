@@ -55,16 +55,28 @@ document.querySelectorAll('#different-trip').forEach(function(e) {
     });
 });
 
-document.querySelectorAll('#start').forEach(function(e) {
-    e.addEventListener('click', function(e) {
-        goToScreen(screens.liveTracking);
+document.querySelector('#start').addEventListener('click', function(e) {
+    goToScreen(screens.liveTracking);
 
-        setTimeout(function() {
-            goToScreen(screens.thankYou);
-        }, 7000);
-    });
+    setTimeout(function() {
+        goToScreen(screens.thankYou);
+    }, 7000);
 });
 
 document.querySelector('#toggle-active').addEventListener('click', function(e) {
     document.getElementById('directions').classList.toggle('active');
+});
+
+document.querySelectorAll('.rating').forEach(function(e) {
+    e.addEventListener('click', function(e) {
+        document.querySelectorAll('.rating').forEach(function(e) {
+            e.classList.remove('selected');
+        });
+
+        e.currentTarget.classList.toggle('selected');
+    });
+});
+
+document.querySelector('#plan-another-trip').addEventListener('click', function(e) {
+    goToScreen(screens.main);
 });
