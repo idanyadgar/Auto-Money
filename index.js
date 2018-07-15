@@ -16,6 +16,10 @@ function goToScreen(screen) {
     document.querySelector('#' + screen + '-screen').style.display = 'block';
 }
 
+setTimeout(function() {
+    goToScreen(screens.main);
+}, 3000);
+
 document.querySelectorAll('.search-box').forEach(function(e) {
     e.addEventListener('click', function(e) {
         goToScreen(screens.mainTyping);

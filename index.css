@@ -57,9 +57,13 @@ body::before {
     position: absolute;
 }
 
+#loader-screen {
+    background-image: url('images/screens/loader.png');
+    display: block;
+}
+
 #main-screen {
     background-image: url('images/screens/main.png');
-    display: block;
 }
 
 #main-typing-screen {
