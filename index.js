@@ -10,10 +10,10 @@ var screens = {
 
 function goToScreen(screen) {
     document.querySelectorAll('.screen').forEach(function(e) {
-        e.style.display = 'none';
+        e.classList.remove('active');
     });
     
-    document.querySelector('#' + screen + '-screen').style.display = 'block';
+    document.querySelector('#' + screen + '-screen').classList.add('active');
 }
 
 setTimeout(function() {

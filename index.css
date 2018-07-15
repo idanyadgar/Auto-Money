@@ -39,17 +39,24 @@ body::before {
     margin: -0.1% 0 0 -0.6%;
     vertical-align: middle;
     cursor: url('images/circle-shape-outline.png'), auto;
+    position: relative;
 }
 
 .screen {
-    width: 100%;
-    height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
-    display: none;
+    opacity: 0;
     border: #777 solid 1px;
-    position: relative;
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
     overflow: hidden;
+    z-index: 1;
+}
+
+.screen.active {
+    z-index: 3;
+    opacity: 1;
 }
 
 .screen * {
@@ -59,11 +66,12 @@ body::before {
 
 #loader-screen {
     background-image: url('images/screens/loader.png');
-    display: block;
+    transition: opacity 1s ease;
 }
 
 #main-screen {
     background-image: url('images/screens/main.png');
+    transition: opacity 1s ease;
 }
 
 #main-typing-screen {
