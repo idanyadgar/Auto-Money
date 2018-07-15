@@ -80,12 +80,17 @@ document.querySelectorAll('#different-trip').forEach(function(e) {
     });
 });
 
+var goToThankYouTimeout;
 document.querySelector('#start').addEventListener('click', function(e) {
     goToScreen(screens.liveTracking);
 
-    setTimeout(function() {
+    goToThankYouTimeout = setTimeout(function() {
         goToScreen(screens.thankYou);
     }, 7000);
+});
+
+document.getElementById('back').addEventListener('click', function() {
+    clearTimeout(goToThankYouTimeout);
 });
 
 document.querySelector('#toggle-active').addEventListener('click', function(e) {

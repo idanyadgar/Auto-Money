@@ -59,7 +59,11 @@ body::before {
     opacity: 1;
 }
 
-.screen.active.no-nav {
+.screen.active.no-toobar-buttons {
+    z-index: 6;
+}
+
+.screen.active.no-back {
     z-index: 4;
 }
 
