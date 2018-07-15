@@ -55,8 +55,12 @@ body::before {
 }
 
 .screen.active {
-    z-index: 3;
+    z-index: 2;
     opacity: 1;
+}
+
+.screen.active.no-nav {
+    z-index: 4;
 }
 
 .screen * {
@@ -64,14 +68,16 @@ body::before {
     position: absolute;
 }
 
+.animate-fade {
+    transition: opacity 1s ease;
+}
+
 #loader-screen {
     background-image: url('images/screens/loader.png');
-    transition: opacity 1s ease;
 }
 
 #main-screen {
     background-image: url('images/screens/main.png');
-    transition: opacity 1s ease;
 }
 
 #main-typing-screen {
@@ -110,6 +116,16 @@ body::before {
 
 .box:not(:first-child) {
     margin-top: 2.5932533733%;
+}
+
+
+#back {
+    position: absolute;
+    top: 1%;
+    left: 1.5%;
+    z-index: 3;
+    width: 20%;
+    height: 8.5%;
 }
 
 /* Loader Screen Elements */

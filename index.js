@@ -8,17 +8,38 @@ var screens = {
     thankYou: 'thank-you'
 };
 
+var screensHistory = [];
+
 function goToScreen(screen) {
     document.querySelectorAll('.screen').forEach(function(e) {
         e.classList.remove('active');
     });
     
     document.querySelector('#' + screen + '-screen').classList.add('active');
+
+    screensHistory.push(screen);
+}
+
+function goBack() {
+    if (screensHistory.length < 2) {
+        return;
+    }
+
+    screensHistory.pop();
+
+    var lastScreen = screensHistory.pop();
+    goToScreen(lastScreen.startsWith('main-') ? screens.main : lastScreen);
 }
 
 setTimeout(function() {
     goToScreen(screens.main);
+
+    setTimeout(function() {
+        document.getElementById('main-screen').classList.remove('animate-fade');
+    }, 1000);
 }, 5000);
+
+document.getElementById('back').addEventListener('click', goBack);
 
 document.querySelectorAll('.search-box').forEach(function(e) {
     e.addEventListener('click', function(e) {
