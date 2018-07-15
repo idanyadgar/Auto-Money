@@ -18,7 +18,7 @@ function goToScreen(screen) {
 
 setTimeout(function() {
     goToScreen(screens.main);
-}, 3000);
+}, 5000);
 
 document.querySelectorAll('.search-box').forEach(function(e) {
     e.addEventListener('click', function(e) {

@@ -112,6 +112,24 @@ body::before {
     margin-top: 2.5932533733%;
 }
 
+/* Loader Screen Elements */
+@keyframes slide-down {
+    from { top: -15.2923538231% }
+    to { top: 40.2548725637% }
+}
+
+#logo {
+    width: 40%;
+    height: 15.2923538231%;
+    background: url('images/logo.png') no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 30%;
+    opacity: 1;
+    animation: slide-down 3s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
 /* Main Screen Elements */
 .search-box {
     width: 68.66666666%;
