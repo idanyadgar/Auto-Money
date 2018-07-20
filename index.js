@@ -31,6 +31,10 @@ function goBack() {
     goToScreen(lastScreen.startsWith('main-') ? screens.main : lastScreen);
 }
 
+function toggleSideMenu() {
+    document.getElementById('side-menu').classList.toggle('active');
+}
+
 setTimeout(function() {
     goToScreen(screens.main);
 
@@ -40,6 +44,7 @@ setTimeout(function() {
 }, 5000);
 
 document.getElementById('back').addEventListener('click', goBack);
+document.getElementById('menu-button').addEventListener('click', toggleSideMenu);
 
 document.querySelectorAll('.search-box').forEach(function(e) {
     e.addEventListener('click', function(e) {
