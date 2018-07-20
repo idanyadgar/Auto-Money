@@ -46,6 +46,10 @@ setTimeout(function() {
 document.getElementById('back').addEventListener('click', goBack);
 document.getElementById('menu-button').addEventListener('click', toggleSideMenu);
 
+document.getElementById('cancel-typing').addEventListener('click', function() {
+    goToScreen(screens.main);
+});
+
 document.querySelectorAll('.search-box').forEach(function(e) {
     e.addEventListener('click', function(e) {
         goToScreen(screens.mainTyping);
