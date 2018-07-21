@@ -89,17 +89,27 @@ document.querySelectorAll('#different-trip').forEach(function(e) {
     });
 });
 
-var goToThankYouTimeout;
+var goToThankYouTimeout, countDownInterval, tripETA = 7;
 document.querySelector('#start').addEventListener('click', function(e) {
     goToScreen(screens.liveTracking);
 
     goToThankYouTimeout = setTimeout(function() {
+        clearInterval(countDownInterval);
+
         goToScreen(screens.thankYou);
-    }, 7000);
+    }, tripETA * 1000);
+
+    document.querySelector('#eta span').innerHTML = tripETA;
+
+    let currentETA = tripETA;
+    countDownInterval = setInterval(function() {
+        document.querySelector('#eta span').innerHTML = --currentETA;
+    }, 1000);
 });
 
 document.getElementById('back').addEventListener('click', function() {
     clearTimeout(goToThankYouTimeout);
+    clearInterval(countDownInterval);
 });
 
 document.querySelector('#toggle-active').addEventListener('click', function(e) {

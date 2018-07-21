@@ -1,4 +1,5 @@
 @import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
 
 body {
     background-color: #ebebeb;
@@ -314,6 +315,19 @@ body::before {
 }
 
 /* Live Tracking Screen Elements */
+#eta {
+    left: 80.6%;
+    top: 12.3%;
+    opacity: 1;
+    font-size: 90%;
+    font-family: 'Exo 2';
+    font-weight: 500;
+}
+
+#eta span {
+    opacity: 1;
+}
+
 #directions {
     opacity: 1;
     width: 89.8666666667%;
