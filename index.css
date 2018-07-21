@@ -315,6 +315,14 @@ body::before {
 }
 
 /* Live Tracking Screen Elements */
+#cancel-trip {
+    top: 12.143928036%;
+    left: 4.93333333333%;
+    height: 3.97301349325%;
+    width: 29.0666666667%;
+    border-radius: 99999px;
+}
+
 #eta {
     left: 80.6%;
     top: 12.3%;

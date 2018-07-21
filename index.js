@@ -112,6 +112,10 @@ document.getElementById('back').addEventListener('click', function() {
     clearInterval(countDownInterval);
 });
 
+document.getElementById('cancel-trip').addEventListener('click', function() {
+    document.getElementById('back').click();
+});
+
 document.querySelector('#toggle-active').addEventListener('click', function(e) {
     document.getElementById('directions').classList.toggle('active');
 });
